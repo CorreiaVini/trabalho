@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-image: url(./musica.jpg);
+        }
+
+        header {
+            background-color: #08f3ff; /* Azul escuro */
+            color: #000000;
+            text-align: center;
+            padding: 1em;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 0;
+        }
+
+        #meio {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 1;
+        }
+
+        .container {
+            background: #ecf0f1; /* Cinza claro */
+            width: 80%;
+            max-width: 600px;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #08f3ff; /* Azul escuro */
+            color: #000000;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Aplicando a animação à sua div */
+        #centro {
+            text-align: center;
+            border: 1px solid #000000;
+            padding: 20px;
+            transform: translate(-50%, 50%);
+            animation: meio 2s infinite; /* Ajuste a duração e outras propriedades conforme necessário */
+        }
+
+        @keyframes meio {
+            0% {
+                transform: translate(-6%, 6%);
+            }
+            50% {
+                transform: translate(-6%, -6%);
+            }
+            100% {
+                transform: translate(-6%, 6%);
+            }
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Sobre Soundz</h1>
+    </header>
+    <div id="meio">
+        <div class="container" id="centro">
+            <h2>Quem Somos</h2>
+            <p>
+                Três amigos talentosos, Cristofer, Bernardo e Vinicius, de Techville, compartilham a paixão pela música e decidem criar o aplicativo "Soundz". Cristofer propõe a ideia de conectar pessoas com base em suas preferências musicais. Bernardo cria um algoritmo inteligente para sugerir músicas com base nos padrões de escuta, enquanto Vinicius projeta uma interface envolvente. O aplicativo permite compartilhar músicas, participar de salas de bate-papo temáticas e fazer novas conexões. O Soundz se torna um sucesso na comunidade musical, proporcionando oportunidades para artistas independentes e promovendo a diversidade musical. Os amigos continuam a aprimorar o aplicativo, transformando sua ideia em uma história inspiradora de sucesso e colaboração. O Soundz celebra a harmonia coletiva da diversidade de gostos musicais.
+            </p>
+        </div>
+    </div>
+    <footer>
+        <p>© 2023 - Soundz</p>
+    </footer>
+</body>
+
+</html>
